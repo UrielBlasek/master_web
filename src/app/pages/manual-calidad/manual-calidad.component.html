@@ -1,0 +1,50 @@
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                  <div class="col-md-5 align-self-center">
+                      <h3 class="text-themecolor">Manual de Calidad</h3>
+                  </div>
+                  <div class="col-md-7 align-self-center">
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a routerLink="/dashboard">Inicio</a></li>
+                          <li class="breadcrumb-item active">Manual de Calidad</li>
+                      </ol>
+                  </div>
+                  <div class="">
+                      <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                  </div>
+              </div>
+              <!-- ============================================================== -->
+              <!-- End Bread crumb and right sidebar toggle -->
+
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+                            <!-- This is the tree node template for leaf nodes -->
+                            <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                              <!-- use a disabled button to provide padding for tree leaf -->
+                              <button mat-icon-button disabled></button>
+                              {{node.name}}
+                            </mat-tree-node>
+                            <!-- This is the tree node template for expandable nodes -->
+                            <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+                              <button mat-icon-button matTreeNodeToggle
+                                      [attr.aria-label]="'Toggle ' + node.name">
+                                      <div>
+                                        
+                                      </div>
+                                <mat-icon class="mat-icon-rtl-mirror">
+                                  {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                                </mat-icon>
+                              </button>
+                              {{node.name}}
+                            </mat-tree-node>
+                          </mat-tree>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+
+

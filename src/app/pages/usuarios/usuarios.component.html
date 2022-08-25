@@ -1,0 +1,200 @@
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Usuarios</h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a routerLink="/dashboard">Inicio</a></li>
+                            <li class="breadcrumb-item active">Usuarios</li>
+                        </ol>
+                    </div>
+                    <div class="">
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+
+                 <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Lista de usuarios <button type="button" class="btn btn-info btn-rounded align-items-end" data-toggle="modal" data-target="#add-contact">Usuario Nuevo</button></h4>
+                                
+                                <div class="table-responsive">
+                                    <table id="demo-foo-addrow" class="table m-t-30 table-hover contact-list" data-page-size="10">
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nombre</th>
+                                                <th>Email</th>
+                                                <th>Telefono</th>
+                                                <th>Departamento</th>
+                                                <th>Acción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user" width="40" class="img-circle" /> Genelia Deshmukh</a>
+                                                </td>
+                                                <td>genelia@gmail.com</td>
+                                                <td>+123 456 789</td>
+                                                <td>RH </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user" width="40" class="img-circle" /> Arijit Singh</a>
+                                                </td>
+                                                <td>arijit@gmail.com</td>
+                                                <td>+234 456 789</td>
+                                                <td>Direccion</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user" width="40" class="img-circle" /> Govinda jalan</a>
+                                                </td>
+                                                <td>govinda@gmail.com</td>
+                                                <td>+345 456 789</td>
+                                                <td>RH</td>
+
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user" width="40" class="img-circle" /> Hritik Roshan</a>
+                                                </td>
+                                                <td>hritik@gmail.com</td>
+                                                <td>+456 456 789</td>
+                                                <td>RH</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user" width="40" class="img-circle" /> John Abraham</a>
+                                                </td>
+                                                <td>john@gmail.com</td>
+                                                <td>+567 456 789</td>
+                                                <td>Direccion </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user" width="40" class="img-circle" /> Pawandeep kumar</a>
+                                                </td>
+                                                <td>pawandeep@gmail.com</td>
+                                                <td>+678 456 789</td>
+                                                <td>Produccion</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>
+                                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user" width="40" class="img-circle" /> Ritesh Deshmukh</a>
+                                                </td>
+                                                <td>ritesh@gmail.com</td>
+                                                <td>+123 456 789</td>
+                                                <td>Produccion </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2">
+                                                   
+                                                </td>
+                                                
+                                                <td colspan="7">
+                                                    <div class="text-right">
+                                                        <ul class="pagination"> </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================== -->
+                <!-- Sales overview chart -->
+                <!-- ============================================================== -->
+                <div id="add-contact" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">Agregar nuevo usuario</h4> </div>
+                            <div class="modal-body">
+                                <form name="formUsuario" [formGroup]="formUsuario" class="form-horizontal form-material">
+                                    <div class="form-group">
+                                        <div class="col-md-12 m-b-20">
+                                            <input type="text" class="form-control" name="usuario" formControlName="usuario" placeholder="Usuario"> </div>
+                                        <div class="col-md-12 m-b-20">
+                                            <input type="text" class="form-control" name="nombre" formControlName="nombre" placeholder="Nombre"> </div>
+                                        <div class="col-md-12 m-b-20">
+                                            <input type="text" class="form-control" name="apellidos" formControlName="apellidos" placeholder="Apellidos"> </div>
+                                        <div class="col-md-12 m-b-20">
+                                            <input type="email" class="form-control" name="email" formControlName="email" placeholder="Email"> </div>
+                                        <div class="col-md-12 m-b-20">
+                                            <input type="number" class="form-control" name="Telefono" formControlName="telefono" placeholder="Telefono"> </div>
+                                            <div class="col-md-12 m-b-20">
+                                                <input type="password" class="form-control" name="password" formControlName="password" placeholder="Contraseña"> </div>
+                                                <div class="col-md-12 m-b-20">
+                                                    <label class="mr-2">Departamento:</label>
+                                                    <select class="form-control"  name="departamento" formControlName="departamento" placeholder="hola">
+                                        
+                                                        <option   *ngFor="let departamento of departamentos"  [value]="departamento.nombre">
+                                                            {{departamento.nombre}}
+                                                        </option>
+                                                
+                                                    </select>
+                                                </div>  
+                         
+                                    </div>
+
+                                    <br>
+                                    <div class="form-control col-md-12 mt-2">
+                                        <div class="fileupload btn btn-danger btn-rounded waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Cargar Imagen</span>
+                                            <input type="file" class="upload" name="foto" formControlName="foto"> </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-info waves-effect submit-btn" data-dismiss="modal" [disabled]="formUsuario.invalid" (click)="addUsuario()">Guardar</button>
+                                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
